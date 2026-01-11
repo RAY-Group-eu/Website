@@ -1,0 +1,3 @@
+[00:00:02.720] Server  LOG     ✓ Ready in 2.5s
+[00:00:13.341] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:16.708] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
