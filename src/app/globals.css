@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Core Colors */
+  --color-ray-dark: #05070c;
+  --color-ray-navy: #050A14;
+  --color-ray-cobalt: #0A1428;
+  --color-ray-blue: #3B82F6;
+  --color-ray-glass: rgba(255, 255, 255, 0.05);
+  --color-ray-glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Backgrounds */
+  --background: var(--color-ray-dark);
+  --foreground: #ffffff;
+
+  --noise-url: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+@theme {
+  --color-ray-dark: var(--color-ray-dark);
+  --color-ray-navy: var(--color-ray-navy);
+  --color-ray-cobalt: var(--color-ray-cobalt);
+  --color-ray-blue: var(--color-ray-blue);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+
+  --animate-slow-spin: spin 20s linear infinite;
+
+}
+
+/* Utilities */
+@utility glass {
+  background: var(--color-ray-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-ray-glass-border);
+}
+
+@utility glass-card {
+  @apply glass rounded-xl transition-all duration-300;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Noise Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: var(--noise-url);
+  opacity: 0.4;
+  z-index: 50;
+}
