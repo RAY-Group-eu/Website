@@ -1,48 +1,53 @@
 'use client'
 
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSearchParams } from 'next/navigation'
+import { canStartIntro, markIntroStarted, markIntroCompleted, isIntroCompleted } from '@/lib/introController'
 
 export default function Preloader() {
     const [isLoading, setIsLoading] = useState(true)
-    const hasRunRef = useRef(false)
     const searchParams = useSearchParams()
 
+    // 1. Module-level Guard (Survives Remounts)
+    // If intro is already done in this session, don't render anything (prevents flash)
+    if (isIntroCompleted()) {
+        return null
+    }
+
     useEffect(() => {
-        // 1. Debug Toggle Check
-        const debugIntro = searchParams.get('intro')
-        if (debugIntro === '0') {
+        // 2. Logic Check
+        const shouldStart = canStartIntro()
+
+        if (!shouldStart) {
             setIsLoading(false)
             return
         }
 
-        // 2. Strict Mode Guard: If already ran, do nothing
-        if (hasRunRef.current) return
-        hasRunRef.current = true
+        // 3. Start Intro
+        markIntroStarted()
+        document.body.style.overflow = 'hidden'
 
-        let timer: NodeJS.Timeout
+        const timer = setTimeout(() => {
+            handleComplete()
+        }, 2000) // 2.0s intro duration
 
-        // 3. Failsafe & Logic wrapped in try/finally (conceptually)
-        // We use a robust timeout sequence
-        try {
-            document.body.style.overflow = 'hidden'
+        // Failsafe
+        const failsafe = setTimeout(() => {
+            handleComplete()
+        }, 4000)
 
-            timer = setTimeout(() => {
-                setIsLoading(false)
-                document.body.style.overflow = ''
-            }, 2000) // 2.0s intro duration
-
-        } catch (e) {
-            console.error("Intro Error:", e)
-            // Error failsafe
+        function handleComplete() {
+            markIntroCompleted()
             setIsLoading(false)
             document.body.style.overflow = ''
+            clearTimeout(timer)
+            clearTimeout(failsafe)
         }
 
-        // 4. Cleanup
         return () => {
             clearTimeout(timer)
+            clearTimeout(failsafe)
             document.body.style.overflow = ''
         }
     }, [searchParams])
