@@ -1,6 +1,14 @@
+'use client'
+
 import React from 'react'
+import { useSearchParams } from 'next/navigation'
 
 export default function BackgroundChrome() {
+    const searchParams = useSearchParams()
+    const debugBg = searchParams.get('bg')
+
+    if (debugBg === '0') return null
+
     return (
         <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020408]">
             {/* 1. Base Gradient - Deep Navy/Black */}

@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+3:I[33447,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js"],"default"]
+4:I[67234,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js"],"default"]
+5:I[3374,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
+6:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"default"]
+7:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"default"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
+b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"ViewportBoundary"]
+d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"MetadataBoundary"]
+f:I[68027,[],"default"]
+:HL["/_next/static/chunks/1803e9aac6e3cee0.css","style"]
+:HL["/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"2UhAJOB1ztkZ4PAergPa9","c":["","legal","privacy"],"q":"","i":false,"f":[[["",{"children":["legal",{"children":[["slug","privacy","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1803e9aac6e3cee0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/e6c0e3cb533d629a.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/20275026f82f1422.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark scroll-smooth","children":["$","body",null,{"className":"inter_c15e96cb-module__0bjUvq__variable space_grotesk_e6988195-module__RNs2Mq__variable antialiased min-h-screen bg-ray-dark text-foreground flex flex-col overflow-x-hidden selection:bg-ray-blue/30","children":[["$","$2",null,{"fallback":null,"children":[["$","$L3",null,{}],["$","$L4",null,{}]]}],["$","$L5",null,{}],["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",[["$","script","script-0",{"src":"/_next/static/chunks/d543d2a2a32e9747.js","async":true,"nonce":"$undefined"}]],["$","$L9",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$2",null,{"name":"Next.Metadata","children":"$Le"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$f",[]],"S":true}
+10:I[22016,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],""]
+12:I[58234,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
+11:T5c8,
+      <div class="space-y-8">
+        <div class="p-4 border-l-2 border-ray-blue bg-ray-blue/5">
+            <p class="font-bold text-ray-blue mb-1">DRAFT STATUS</p>
+            <p class="text-sm">This document is a placeholder/draft. It must be reviewed by legal counsel before the website goes live in production.</p>
+        </div>
+
+        <section>
+            <h3 class="text-2xl font-display font-medium mb-4 text-white">1. Data Protection at a Glance</h3>
+            <p>We respect your privacy. This website generally collects minimal data necessary for technical operation (server logs). We do not use invasive third-party tracking without your explicit consent.</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-display font-medium mb-4 text-white">2. Hosting</h3>
+            <p>This website is hosted by an external service provider (Vercel/Netlify/Similar). Personal data collected on this website is stored on the host's servers. This may include IP addresses, meta/communication data, and website access data.</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-display font-medium mb-4 text-white">3. Contact Form</h3>
+            <p>If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions.</p>
+        </section>
+      </div>
+    8:[["$","$L5",null,{}],["$","main",null,{"className":"min-h-screen pt-32 pb-20","children":["$","div",null,{"className":"container mx-auto px-6 max-w-3xl","children":[["$","$L10",null,{"href":"/","className":"text-sm text-ray-blue mb-8 block hover:underline","children":"← Back to Home"}],["$","h1",null,{"className":"text-4xl md:text-5xl font-display font-bold text-white mb-12","children":"Privacy Policy"}],["$","div",null,{"className":"prose prose-invert prose-lg text-white/70","dangerouslySetInnerHTML":{"__html":"$11"}}]]}]}],["$","$L12",null,{}]]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"IconMark"]
+a:null
+e:[["$","title","0",{"children":"Ray Group"}],["$","meta","1",{"name":"description","content":"A venture studio building trustworthy digital products."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/favicon.ico"}],["$","$L13","4",{}]]

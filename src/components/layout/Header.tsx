@@ -96,18 +96,20 @@ export default function Header() {
                                             if (isHash) {
                                                 e.preventDefault()
                                                 if (window.location.pathname !== '/') {
-                                                    // From /contact -> /#about
-                                                    // We use window.location to force a hard nav if needed, or router
-                                                    // But Next.js router.push might not scroll if it's just a hash change? 
-                                                    // Actually router.push('/#about') usually works.
-                                                    // Let's use the router from hook if available, but for simplicity/robustness here:
+                                                    // Force navigation to home with hash
                                                     window.location.href = '/' + link.href
                                                 } else {
-                                                    // On Home page -> Smooth scroll
+                                                    // Smooth scroll on home
                                                     const target = document.querySelector(link.href)
                                                     if (target) {
-                                                        target.scrollIntoView({ behavior: 'smooth' })
-                                                        // Optional: update URL
+                                                        const offset = 80 // Header height buffer
+                                                        const elementPosition = target.getBoundingClientRect().top
+                                                        const offsetPosition = elementPosition + window.scrollY - offset
+
+                                                        window.scrollTo({
+                                                            top: offsetPosition,
+                                                            behavior: "smooth"
+                                                        })
                                                         window.history.pushState(null, '', link.href)
                                                     }
                                                 }
@@ -196,9 +198,15 @@ export default function Header() {
                                                 } else {
                                                     const target = document.querySelector(link.href)
                                                     if (target) {
-                                                        // Small timeout to allow menu to close/clearing
                                                         setTimeout(() => {
-                                                            target.scrollIntoView({ behavior: 'smooth' })
+                                                            const offset = 80
+                                                            const elementPosition = target.getBoundingClientRect().top
+                                                            const offsetPosition = elementPosition + window.scrollY - offset
+
+                                                            window.scrollTo({
+                                                                top: offsetPosition,
+                                                                behavior: "smooth"
+                                                            })
                                                         }, 300)
                                                     }
                                                 }

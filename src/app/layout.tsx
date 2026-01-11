@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   }
 };
 
+import { Suspense } from "react";
+import Preloader from "@/components/ui/Preloader";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +37,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen bg-ray-dark text-foreground flex flex-col overflow-x-hidden selection:bg-ray-blue/30`}
       >
-        <BackgroundChrome />
+        <Suspense fallback={null}>
+          <Preloader />
+          <BackgroundChrome />
+        </Suspense>
         <Header />
         {children}
       </body>
