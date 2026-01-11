@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[3374,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
-3:I[22016,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],""]
-5:I[58234,["/_next/static/chunks/e6c0e3cb533d629a.js","/_next/static/chunks/20275026f82f1422.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
+2:I[3374,["/_next/static/chunks/74716de93f8d2c59.js","/_next/static/chunks/39882ca3fc86bb47.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
+3:I[22016,["/_next/static/chunks/74716de93f8d2c59.js","/_next/static/chunks/39882ca3fc86bb47.js","/_next/static/chunks/d543d2a2a32e9747.js"],""]
+5:I[58234,["/_next/static/chunks/74716de93f8d2c59.js","/_next/static/chunks/39882ca3fc86bb47.js","/_next/static/chunks/d543d2a2a32e9747.js"],"default"]
 6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 4:T5c8,
@@ -26,5 +26,5 @@
             <p>If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions.</p>
         </section>
       </div>
-    0:{"buildId":"2UhAJOB1ztkZ4PAergPa9","rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"min-h-screen pt-32 pb-20","children":["$","div",null,{"className":"container mx-auto px-6 max-w-3xl","children":[["$","$L3",null,{"href":"/","className":"text-sm text-ray-blue mb-8 block hover:underline","children":"← Back to Home"}],["$","h1",null,{"className":"text-4xl md:text-5xl font-display font-bold text-white mb-12","children":"Privacy Policy"}],["$","div",null,{"className":"prose prose-invert prose-lg text-white/70","dangerouslySetInnerHTML":{"__html":"$4"}}]]}]}],["$","$L5",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/d543d2a2a32e9747.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+    0:{"buildId":"Sh20lTR7qBPVP6QU-9Cs_","rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"min-h-screen pt-32 pb-20","children":["$","div",null,{"className":"container mx-auto px-6 max-w-3xl","children":[["$","$L3",null,{"href":"/","className":"text-sm text-ray-blue mb-8 block hover:underline","children":"← Back to Home"}],["$","h1",null,{"className":"text-4xl md:text-5xl font-display font-bold text-white mb-12","children":"Privacy Policy"}],["$","div",null,{"className":"prose prose-invert prose-lg text-white/70","dangerouslySetInnerHTML":{"__html":"$4"}}]]}]}],["$","$L5",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/d543d2a2a32e9747.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 8:null

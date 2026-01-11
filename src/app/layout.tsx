@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google"; // eslint-disable-line @typescript-eslint/no-unused-vars
 import "./globals.css";
 import Header from '@/components/layout/Header';
-import BackgroundChrome from '@/components/ui/BackgroundChrome';
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 import { Suspense } from "react";
-import Preloader from "@/components/ui/Preloader";
+import DebugHud from "@/components/DebugHud";
 
 export default function RootLayout({
   children,
@@ -38,8 +38,7 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen bg-ray-dark text-foreground flex flex-col overflow-x-hidden selection:bg-ray-blue/30`}
       >
         <Suspense fallback={null}>
-          <Preloader />
-          <BackgroundChrome />
+          <DebugHud />
         </Suspense>
         <Header />
         {children}
