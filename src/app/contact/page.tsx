@@ -2,10 +2,8 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { ArrowRight, Check, Send } from 'lucide-react'
-import clsx from 'clsx'
+import { Check, Send } from 'lucide-react'
 import LenisScroll from '@/components/layout/LenisScroll'
 
 export default function ContactPage() {
@@ -23,7 +21,6 @@ export default function ContactPage() {
 
     return (
         <LenisScroll>
-            <Header />
             <main className="min-h-screen pt-32 pb-20 relative overflow-hidden flex flex-col items-center justify-center">
                 {/* Backgrounds */}
                 <div className="absolute inset-0 pointer-events-none">

@@ -1,3 +1,228 @@
-[00:00:02.720] Server  LOG     ✓ Ready in 2.5s
-[00:00:13.341] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:00:16.708] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:01.036] Server  LOG     ✓ Ready in 790ms
+[00:00:03.102] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.328] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <script>
+            <script>
+            <script>
+            <RootLayout>
+              <html lang="en" className="dark scrol...">
+                <body className="inter_c15e...">
+                  <Suspense fallback={null}>
+                    <DebugHud>
+                    <Preloader>
+                      <AnimatePresence mode="wait">
+                        <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                          <motion.div initial={{opacity:1}} exit={{opacity:0}} transition={{duration:0.8, ...}} ...>
+                            <div
++                             className="fixed inset-0 z-[100] flex items-center justify-center bg-ray-dark"
+-                             className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020408]"
++                             style={{opacity:1}}
+-                             style={{}}
+                              ref={function useMotionRef.useCallback}
+                            >
+                              <div
++                               className="relative"
+-                               className="absolute inset-0 opacity-40 mix-blend-screen"
+-                               style={{background-image:"radial-gra...",background-position-x:"initial", ...}}
+                              >
+                                <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
++                                 <div
++                                   className="flex flex-col items-center gap-4"
++                                   style={{opacity:0,transform:"scale(0.9)"}}
++                                   ref={function useMotionRef.useCallback}
++                                 >
+                                ...
+                    ...
+                  ...
+        ...
+
+[00:00:03.554] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <script>
+            <script>
+            <script>
+            <RootLayout>
+              <html lang="en" className="dark scrol...">
+                <body className="inter_c15e...">
+                  <Suspense fallback={null}>
+                    <DebugHud>
+                    <Preloader>
+                      <AnimatePresence mode="wait">
+                        <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                          <motion.div initial={{opacity:1}} exit={{opacity:0}} transition={{duration:0.8, ...}} ...>
+                            <div
++                             className="fixed inset-0 z-[100] flex items-center justify-center bg-ray-dark"
+-                             className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020408]"
++                             style={{opacity:1}}
+-                             style={{}}
+                              ref={function useMotionRef.useCallback}
+                            >
+                              <div
++                               className="relative"
+-                               className="absolute inset-0 opacity-40 mix-blend-screen"
+-                               style={{background-image:"radial-gra...",background-position-x:"initial", ...}}
+                              >
+                                <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
++                                 <div
++                                   className="flex flex-col items-center gap-4"
++                                   style={{opacity:0,transform:"scale(0.9)"}}
++                                   ref={function useMotionRef.useCallback}
++                                 >
+                                ...
+                    ...
+                  ...
+        ...
+
+[00:00:04.004] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:23.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.894] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:23.894] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <script>
+            <script>
+            <script>
+            <RootLayout>
+              <html lang="en" className="dark scrol...">
+                <body className="inter_c15e...">
+                  <Suspense fallback={null}>
+                    <DebugHud>
+                    <Preloader>
+                      <AnimatePresence mode="wait">
+                        <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                          <motion.div initial={{opacity:1}} exit={{opacity:0}} transition={{duration:0.8, ...}} ...>
+                            <div
++                             className="fixed inset-0 z-[100] flex items-center justify-center bg-ray-dark"
+-                             className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020408]"
++                             style={{opacity:1}}
+-                             style={{}}
+                              ref={function useMotionRef.useCallback}
+                            >
+                              <div
++                               className="relative"
+-                               className="absolute inset-0 opacity-40 mix-blend-screen"
+-                               style={{background-image:"radial-gra...",background-position-x:"initial", ...}}
+                              >
+                                <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
++                                 <div
++                                   className="flex flex-col items-center gap-4"
++                                   style={{opacity:0,transform:"scale(0.9)"}}
++                                   ref={function useMotionRef.useCallback}
++                                 >
+                                ...
+                    ...
+                  ...
+        ...
+
+[00:00:58.742] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:58.981] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:58.982] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <script>
+            <script>
+            <script>
+            <RootLayout>
+              <html lang="en" className="dark scrol...">
+                <body className="inter_c15e...">
+                  <Suspense fallback={null}>
+                    <DebugHud>
+                    <Preloader>
+                      <AnimatePresence mode="wait">
+                        <PresenceChild isPresent={true} initial={undefined} custom={undefined} ...>
+                          <motion.div initial={{opacity:1}} exit={{opacity:0}} transition={{duration:0.8, ...}} ...>
+                            <div
++                             className="fixed inset-0 z-[100] flex items-center justify-center bg-ray-dark"
+-                             className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#020408]"
++                             style={{opacity:1}}
+-                             style={{}}
+                              ref={function useMotionRef.useCallback}
+                            >
+                              <div
++                               className="relative"
+-                               className="absolute inset-0 opacity-40 mix-blend-screen"
+-                               style={{background-image:"radial-gra...",background-position-x:"initial", ...}}
+                              >
+                                <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} ...>
++                                 <div
++                                   className="flex flex-col items-center gap-4"
++                                   style={{opacity:0,transform:"scale(0.9)"}}
++                                   ref={function useMotionRef.useCallback}
++                                 >
+                                ...
+                    ...
+                  ...
+        ...
+

@@ -26,6 +26,8 @@ export const metadata: Metadata = {
 
 import { Suspense } from "react";
 import DebugHud from "@/components/DebugHud";
+import Preloader from "@/components/ui/Preloader";
+import BackgroundChrome from "@/components/ui/BackgroundChrome";
 
 export default function RootLayout({
   children,
@@ -39,6 +41,8 @@ export default function RootLayout({
       >
         <Suspense fallback={null}>
           <DebugHud />
+          <Preloader />
+          <BackgroundChrome />
         </Suspense>
         <Header />
         {children}

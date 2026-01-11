@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///Users/rezan/Projekte/RAY%20Group%20Website/src/app/health/route.ts"],"sourcesContent":["/**\n * Health check route for deployment verification.\n * Helps distinguish \"app not deployed\" vs \"home route broken\".\n * \n * Access at: /__health\n */\n\nexport async function GET() {\n    return Response.json({\n        status: 'ok',\n        timestamp: Date.now(),\n        env: process.env.NODE_ENV,\n    })\n}\n"],"names":[],"mappings":"AAAA;;;;;CAKC;;;;AAEM,eAAe;IAClB,OAAO,SAAS,IAAI,CAAC;QACjB,QAAQ;QACR,WAAW,KAAK,GAAG;QACnB,GAAG;IACP;AACJ"}}]
+}
